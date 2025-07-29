@@ -20,18 +20,19 @@ body{
 
 .page{
     position: relative;
-    width: 25vw;
-    height: 75vh;
-    background-color:#f7efaf;
+    width: 20vw;
+    height: 70vh;
+    background-color:#ffffff;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 5px 20px 2px rgba(110, 110, 110, 0.473);
 }
 
 .plus-icon{
     position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: white;
+    width: 80px;
+    height: 80px;
+    background-color: #F6E05D;
     top: 80%;
     right: 10% ;
     border-radius: 50px;
@@ -39,9 +40,9 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 70px;
-    color: #f7efaf;
+    color: #ffffff;
     padding-bottom: 15px;
-    box-shadow: 3px 3px 3px 3px;
+    box-shadow: 3px 3px 0 rgba(107, 107, 107, 0.418);
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -54,7 +55,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .head {
@@ -71,16 +72,16 @@ nav {
 .options {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 img{
-    width: 30px;
+    width: 25px;
 }
 .title{
     position: absolute;
     font-size: 30px;
-    top: 20%;
+    top: 15%;
     left: 10%;
     color: #8a7c44;
     font-weight: 500;
@@ -100,7 +101,7 @@ img{
 
 .list {
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 10%;
     right: 10%;
     bottom: 25%;
@@ -113,7 +114,7 @@ img{
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #000000;
-    padding: 8px 8px;
+    padding: 15px 8px;
     font-size: 18px;
     color: #5f5f5f;
 }
@@ -121,4 +122,31 @@ img{
 .list-item span {
     max-width: 80%;
     word-wrap: break-word;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  accent-color: rgb(190, 124, 0);
+  cursor: pointer;
+}
+
+.checkbox:checked {
+  background-color: #4CAF50;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #ff0000;
+}
+
+.edit-timestamp {
+    position: absolute;
+    bottom: 4%;
+    left: 10%;
+    font-size: 18px;
+    font-weight: 400;
+    color: #7a7a7a;
+    font-style: italic;
+    display: none;
 }
